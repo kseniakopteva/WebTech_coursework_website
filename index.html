@@ -4,92 +4,133 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>LAKE Furniture</title>
+        <link rel="stylesheet" href="main.css" />
     </head>
     <body>
         <header>
-            <h1>Fairy cafe</h1>
+            <h1><a href="#home">LAKE</a></h1>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Today's specials</li>
-                    <li>Menu</li>
-                    <li>Order online</li>
-                    <li>Locations</li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#stores">Our stores</a></li>
+                    <li><a href="#contact">Contact us</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <section>
+            <section class="hero" id="home">
+                <img src="" alt="Hero image" />
                 <div>
-                    <h2>Cafe of ... and, of course, delicious coffee.</h2>
-                    <button>See today's specials</button>
+                    <h2 class="hero-heading">
+                        At LAKE Furniture we care about you and your furniture needs.
+                    </h2>
+                    <button></button>
                 </div>
             </section>
-            <section>
-                <h2>Today's specials</h2>
+
+            <section class="featured" id="featured">
+                <h2 class="section-heading">Featured products</h2>
                 <div>
-                    <img src="" alt="Picture of some weird coffee" />
-                    <h3>Name of coffee</h3>
-                    <p>It's description.</p>
-                </div>
-                <div>
-                    <img src="" alt="Picture of some weird coffee" />
-                    <h3>Name of coffee</h3>
-                    <p>It's description.</p>
+                    <div>
+                        <img src="" alt="Picture of furniture" />
+                        <h3>Name of furniture</h3>
+                        <p>It's description.</p>
+                    </div>
+                    <div>
+                        <img src="" alt="Picture of furniture" />
+                        <h3>Name of furniture</h3>
+                        <p>It's description.</p>
+                    </div>
                 </div>
             </section>
-            <section>
-                <h2>Our products</h2>
+
+            <section class="featured" id="featured">
                 <div>
-                    <img src="" alt="Picture of a cup of coffee" />
-                    <h3>Coffee</h3>
+                    <img src="" alt="Icon" />
+                    <h3>Benefit desc</h3>
                 </div>
                 <div>
-                    <img src="" alt="Picture of a cup of tea" />
-                    <h3>Tea</h3>
+                    <img src="" alt="Icon" />
+                    <h3>Benefit desc</h3>
                 </div>
                 <div>
-                    <img src="" alt="Picture of food" />
-                    <h3>Snacks</h3>
+                    <img src="" alt="Icon" />
+                    <h3>Benefit desc</h3>
                 </div>
             </section>
-            <section>
-                <h2>Order online</h2>
+
+            <section class="about" id="about">
+                <h2 class="section-heading">About us</h2>
                 <div>
-                    <h3>You can order our coffee right to your doorstep.</h3>
-                    <p>Some explaining information.</p>
-                </div>
-                <div>
-                    <form action="">
-                        <fieldset>
-                            <legend>Order information</legend>
-                            <!-- Some interactive checkboxes -->
-                        </fieldset>
-                        <fieldset>
-                            <legend>Personal information</legend>
-
-                            <label for="fname">First name:</label>
-                            <input type="text" id="fname" name="fname" />
-
-                            <label for="lname">Last name:</label>
-                            <input type="text" id="lname" name="lname" />
-
-                            <label for="address">Address:</label>
-                            <input type="text" id="address" name="address" />
-
-                            <label for="email">E-mail:</label>
-                            <input type="email" id="email" name="email" />
-                        </fieldset>
-                    </form>
+                    <p>
+                        Information about us. Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Et dolores cum, fugit perspiciatis, alias quos facilis, veritatis iure
+                        consequuntur eaque porro accusantium? Eveniet fuga vero quibusdam hic neque,
+                        quidem ea!
+                    </p>
+                    <div>
+                        <img src="" alt="Client photo" />
+                        <blockquote>Quote</blockquote>
+                    </div>
                 </div>
             </section>
-            <section>
-                <h2>Our locations</h2>
+
+            <section class="stores" id="stores">
+                <h2 class="section-heading">Our stores</h2>
+                <div>
+                    <img src="" alt="Map" />
+                    <div>
+                        <ul>
+                            <li>... mall, Street, CITY</li>
+                            <li>... mall, Street, CITY</li>
+                            <li>... mall, Street, CITY</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Work hours</h3>
+                        <ol>
+                            <li>8:00-19:00</li>
+                            <li>8:00-19:00</li>
+                            <li>8:00-19:00</li>
+                            <li>8:00-19:00</li>
+                            <li>8:00-19:00</li>
+                            <li>-</li>
+                            <li>-</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <h2 class="section-heading">Contact us</h2>
+                <p>If you have any questions...</p>
+                <form action="https://www.w3schools.com/action_page.php">
+                    <fieldset>
+                        <legend>Personal information</legend>
+
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname" />
+
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname" />
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" />
+                    </fieldset>
+                </form>
             </section>
         </main>
 
-        <footer></footer>
+        <footer>
+            <h4>Copyright LAKE Furniture 2021</h4>
+            <div>
+                <img src="" alt="Twitter icon" />
+                <img src="" alt="Facebook icon" />
+            </div>
+        </footer>
     </body>
 </html>
