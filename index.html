@@ -26,7 +26,6 @@
 
     <main>
         <section class="hero flex-container" id="home">
-            <div class="hero-image"></div>
             <div class="hero-text flex-container">
                 <h2 class="hero-heading">
                     At LAKE Furniture <br>
@@ -35,6 +34,7 @@
                 </h2>
                 <a href="#stores"><button class="hero-button">See our stores and work hours</button></a>
             </div>
+            <div class="hero-image"></div>
         </section>
 
         <section class="featured" id="featured">
@@ -43,19 +43,19 @@
                 <div class="featured-item">
                     <img src="./images/featured-couch.jpg" alt="Featured couch image" />
                     <h3>Designer couch by Kai Aagaard</h3>
-                    <p>A couch that exceeds all your expextations in design and comfort.</p>
+                    <p class="featured-desc">A couch that exceeds all your expextations in design and comfort.</p>
                 </div>
                 <div class="featured-item">
                     <img src="./images/featured-stool.jpg" alt="Featured stool image" />
                     <h3>Designer stool by Trygve Hanssen</h3>
-                    <p>No words will describe the experience.</p>
+                    <p class="featured-desc">No words will describe the experience.</p>
                 </div>
             </div>
         </section>
 
         <section class="benefits flex-container space-around" id="benefits">
             <div class="benefits-item">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FF5555">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FF5555">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                         d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z" />
@@ -63,8 +63,8 @@
                 <h3>23 456 789 satisfied customers</h3>
             </div>
             <div class="benefits-item">
-                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px"
-                    viewBox="0 0 24 24" width="24px" fill="#4a453b">
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"
+                    fill="#4a453b">
                     <g>
                         <rect fill="none" height="24" width="24" />
                     </g>
@@ -79,7 +79,7 @@
                 <h3>Over 1000 unique products</h3>
             </div>
             <div class="benefits-item">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#DDA000">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#DDA000">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                         d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z" />
@@ -87,7 +87,7 @@
                 <h3>Outstanding quality</h3>
             </div>
             <div class="benefits-item">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#4444FF">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4444FF">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                         d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
@@ -98,25 +98,28 @@
 
         <section class="about" id="about">
             <h2 class="section-heading">About us</h2>
-            <div class="flex-container space-around">
-                <p>
-                    This company was founded in early 2010s and have been developing ever since.
-                    The founder, Adette Bruce, has made an appearance in furniture business in
-                    2009 - she very soon earned respect in the community for her knowledge and
-                    creative ideas, as well as fondness for her positive and energetic
-                    personality.
-                </p>
-                <div>
-                    <p> Here are our priorities: </p>
-                    <ul>
-                        <li>L - Loving what we do</li>
-                        <li>A - Attention to our customers</li>
-                        <li>K - Knowledge of furniture making</li>
-                        <li>E - Excitement in life</li>
-                    </ul>
+            <div class="about-flex flex-container">
+                <div class="about-flex-text flex-container">
+                    <p class="about-item">
+                        This company was founded in early 2010s and have been developing ever since.
+                        The founder, Adette Bruce, has made an appearance in furniture business in
+                        2009 - she very soon earned respect in the community for her knowledge and
+                        creative ideas, as well as fondness for her positive and energetic
+                        personality.
+                    </p>
+                    <div class="about-item">
+                        <p> Here are our priorities: </p>
+                        <ul>
+                            <li>L - Loving what we do</li>
+                            <li>A - Attention to our customers</li>
+                            <li>K - Knowledge of furniture making</li>
+                            <li>E - Excitement in life</li>
+                        </ul>
+                    </div>
                 </div>
                 <!-- <div> -->
-                <img src="./images/founder.jpg" alt="Photo of the LAKE Furniture founder, Adette Bruce"
+                <img class="about-item about-photo" src="./images/founder.jpg"
+                    alt="Photo of the LAKE Furniture founder, Adette Bruce"
                     title="Photo of the LAKE Furniture founder, Adette Bruce" />
                 <!-- </div> -->
             </div>
@@ -125,7 +128,7 @@
         <section class="stores" id="stores">
             <h2 class="section-heading">Our stores</h2>
             <div class="flex-container space-around">
-                <img src="./images/map2.jpg" alt="Map with locations of our stores" />
+                <img class="map-image" src="./images/map2.jpg" alt="Map with locations of our stores" />
                 <div class="flex-container space-between">
                     <div>
                         <ul>

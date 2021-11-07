@@ -1,15 +1,20 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #10181C;
     margin: 0;
+    background-color: #F2F0F0;
+    /* max-width: 1800px; */
+    /* margin: auto; */
 }
 
+/* 
 img {
     width: 25%;
-}
+} */
 
 .navbar {
     font-size: 1.1em;
-    padding: 0px 20px;
+    /* padding: 0px 50px; */
     position: relative;
     justify-content: space-between;
     height: 70px;
@@ -17,15 +22,22 @@ img {
 }
 
 .navbar-brand {
+    display: block;
     text-decoration: none;
-    color: black;
-    font-weight: 100;
-    font-size: 40px;
-    margin-left: 20px;
+    color: #10181C;
+    /* font-weight: 100; */
+    font-size: 1.5em;
+    /* margin: 100px; */
+    padding-left: 30px;
+    text-decoration: none;
+    color: #10181C;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 .navbar-nav {
     list-style-type: none;
+    padding-right: 30px;
 }
 
 .nav-item {
@@ -36,17 +48,23 @@ img {
     text-align: center;
     padding: 16px;
     text-decoration: none;
-    color: black;
+    color: #10181C;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #6C9392;
 }
 
 .flex-container {
     display: flex;
-    outline: 2px solid cadetblue;
+    /* outline: 2px solid cadetblue; */
     padding: 0;
 }
 
 .flex-container * {
-    outline: 2px solid blueviolet;
+    /* outline: 2px solid blueviolet; */
     margin: 0;
     /* margin: 10px; */
 }
@@ -54,30 +72,48 @@ img {
 .hero {
     margin-top: -70px;
     height: 100vh;
+    justify-content: space-between;
 }
 
 .hero-image {
-    width: 50vw;
+    width: 60vw;
     background-image: url("/images/hero.jpg");
     background-size: cover;
-    background-position: left center;
+    background-position: right center;
 }
 
 .hero-text {
-    width: 50vw -200px;
+    width: 40vw;
     flex-direction: column;
-    align-content: center;
+    /* align-content: center; */
+    align-items: flex-start;
     justify-content: center;
     padding: 100px;
+    color: #112624;
+    /* background-color: #F2F0F0; */
 }
 
 .hero-heading {
-    font-size: 3em;
+    font-size: 2.5em;
     padding-bottom: 50px;
 }
 
 .hero-button {
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
     width: 300px;
+    border: none;
+    color: #10181C;
+    font-weight: bold;
+    background-color: #C88157;
+    margin-top: 50px;
+    padding: 20px;
+    transition: box-shadow 0.3s;
+    border-radius: 5px;
+}
+
+.hero-button:hover {
+    box-shadow: 0 0px 8px 0 #a640057a;
 }
 
 .space-around {
@@ -88,9 +124,40 @@ img {
     justify-content: space-between;
 }
 
+.featured {
+    height: 70vh;
+    padding: 50px 0px;
+    background-color: #112624;
+    color: #F2F0F0;
+}
+
+.featured-item {
+    width: 400px;
+    padding: 50px;
+    /* margin: 200px 10px; */
+}
+
+.featured-item img {
+    width: 100%;
+    margin-bottom: 40px;
+    box-shadow: 20px 20px 0 #6C9392;
+}
+
+.featured-desc {
+    font-style: italic;
+    color: #CDB0A0;
+    margin-left: 20px;
+    display: inline-block;
+}
+
 .benefits {
     flex-wrap: wrap;
     align-content: space-around;
+    padding: 0 15% 0 15%;
+    height: 600px;
+    /* max-width: 1500px; */
+    /* margin: auto; */
+    background: #F2F0F0;
 }
 
 .benefits-item {
@@ -100,8 +167,13 @@ img {
     margin: 50px;
 }
 
+.benefits-item svg {
+    width: 60px;
+}
+
 .section-heading {
     text-align: center;
+    margin: 0;
 }
 
 .contact {
@@ -116,16 +188,37 @@ img {
     height: 100vh;
 }
 
-.featured {
-    height: 70vh;
-    margin: 50px 0px;
+.about {
+    background-color: #365953;
+    color: #F2F0F0;
+    margin: 0;
+    padding: 30px 50px 30px 50px;
 }
 
-.featured-item {
-    width: 300px;
-    /* margin: 200px 10px; */
+.about .section-heading {
+    padding: 20px;
 }
 
-.featured-item img {
-    width: 300px;
+.about img {
+    width: 700px;
+    height: auto;
+}
+
+.about-flex {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.about-flex-text {
+    flex-direction: column;
+    width: 30vw;
+}
+
+.about-item {
+    padding: 20px 0 20px 0;
+}
+
+.map-image {
+    width: 400px;
 }
