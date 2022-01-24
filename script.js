@@ -28,8 +28,8 @@ function validateForm() {
             alert("Please enter a valid age. Age field must contain only numbers");
             return false;
         }
-        if (age !== "" && (age < 0)) {
-            alert("Please enter a valid age. Age cannot be a negative number");
+        if (age !== "" && (age <= 0)) {
+            alert("Please enter a valid age. Age cannot be less or equal zero");
             return false;
         }
         if (age !== "" && (age > 200)) {
