@@ -14,21 +14,10 @@ function validateForm() {
     let message = message_elem.value;
 
     if (name === "" || age === "" || mail === "" || message === "" || !validateEmail(mail)) {
-        // alert("validation failed false");
-        // let warning = document.createElement("span");
-        // let warning_text = document.createTextNode("Please enter a value.");
-        // warning.appendChild(warning_text);
-        // warning.style.backgroundColor = "red";
-        // warning.style.color = "white";
-        // warning.style.display = "block";
-        // warning.style.position = "absolute";
-        // warning.style.marginTop = "-10px";
-        // warning.style.right = "300px";
 
         if (name === "") {
             alert("Please enter a name.");
             return false;
-            //     name_elem.parentNode.insertBefore(warning, name_elem.nextSibling);
         }
         if (name !== "" && hasNumber(name)) {
 
@@ -50,20 +39,12 @@ function validateForm() {
         if (mail === "") {
             alert("Please enter an e-mail.");
             return false;
-
-            //     mail_elem.parentNode.insertBefore(warning.cloneNode(true), mail_elem.nextSibling);
         }
         if (message === "") {
             alert("Please enter a message.");
             return false;
-            //     message_elem.parentNode.insertBefore(warning.cloneNode(true), message_elem.nextSibling);
         }
-
-        // returnToPreviousPage();
-        // return false;
     }
-
-    // alert("validations passed");
     return true;
 }
 
@@ -82,6 +63,6 @@ function createMoreText() {
             .attr("id", "newDiv1")
             .addClass("newDiv purple bloated")
             .append("<span/>")
-            .text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur feugiat purus ac vulputate. ")
+            .text("Adette Bruce has a sister called Laura Bruce, who is a famous businesswoman. They grew up far away from the city together, on their parents' farm.")
     );
 }
